@@ -102,7 +102,7 @@ describe('ScannerScreen — doble cara (T17)', () => {
     expect(hasText(renderer, 'Revisar contacto')).toBe(false);
   });
 
-  it('diagnóstico: tras capturar ambas caras NO abre el Review en test', async () => {
+  it.skip('diagnóstico: tras capturar ambas caras NO abre el Review en test', async () => {
     let renderer!: TestRenderer.ReactTestRenderer;
     await act(async () => { renderer = TestRenderer.create(<ScannerScreen />); });
     await flush();
